@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!--  M O B I L E    H E A D E R  N A V B A R  -->
+
+            <div id="mobileHeader"
+                class=" duration-500 translate-x-[384px] top-0 z-50 h-[100vh] fixed  max-w-[384px] ] right-0 bg-white p-8 ">
+                <div class="w-[100%] flex justify-end items-center">
+                    <div onclick="openHeader(false)"><i class="fa-solid fa-x text-2xl"></i></div>
+                </div>
+                <ul class="">
+                    <li class="text-base text-[#300B60] font-bold mx-3 px-2 py-3">Sayt Yarat</li>
+                    <li class="text-base text-[#300B60] font-bold mx-3 px-2 py-3">Veb sayt ˅</li>
+                    <li class="text-base text-[#300B60] font-bold mx-3 px-2 py-3">Domen</li>
+                    <li class="text-base text-[#300B60] font-bold mx-3 px-2 py-3">Hosting ˅</li>
+                    <li class="text-base text-[#300B60] font-bold mx-3 px-2 py-3">Şirkət ˅</li>
+                    <li class="text-base text-[#300B60] font-bold mx-3 px-2 py-3">Xidmətlər ˅</li>
+                </ul>
+                <div class="flex">
+                    <div class="flex items-center  ml-5 w-[30%]">
+                        <span class="text-[22px] font-bold">₼</span>
+                        <span class="p-2 text-slate-400">˅</span>
+                    </div>
+                    <div class="flex items-center justify-around ">
+                        <img class="w-[20px] h-[25px]" src="img/az.webp" alt="aze-bayraq">
+                        <span class="p-2 text-slate-400">˅</span>
+                    </div>
+                </div>
+                <button
+                    class="font-bold px-5 py-2 rounded-lg text-[#FFF] bg-gradient-to-r from-violet-500 to-fuchsia-500 w-[100%] mt-5">Qiymət
+                    Təklifi Al</button>
+                <button class="font-bold py-2 text-[#A271F2] rounded-lg border border-[#A271F2] w-[100%] mt-5">Daxil
+                    olun</button>
+            </div>
+            <div class="w-full fixed top-0 z-20 ">
+                <div class="  bg-white   flex  justify-between items-center    max-w-[1920px]   px-[22px] py-6">
+                    <div class="w-[114px] h-[35px]"><img class="w-[100%]" src="img/saytaz.svg" alt="sayt.az Logo"></div>
+                    <div class="w-[50%] lg:block hidden">
+                        <ul class="flex justify-around 2xl:gap-x-[3.75rem] gap-x-1 ">
+                            <li class="text-base text-[#300B60] font-semibold">Sayt Yarat</li>
+                            <li class="text-base text-[#300B60] font-semibold">Veb sayt ˅</li>
+                            <li class="text-base text-[#300B60] font-semibold">Domen</li>
+                            <li class="text-base text-[#300B60] font-semibold">Hosting ˅</li>
+                            <li class="text-base text-[#300B60] font-semibold">Şirkət ˅</li>
+                            <li class="text-base text-[#300B60] font-semibold">Xidmətlər ˅</li>
+                        </ul>
+                    </div>
+                    <div class="xl:w-[30%]">
+                        <div class="flex items-center xl:justify-between justify-end">
+                            <div class="flex items-center justify-around xl:w-[30%]  ">
+                                <div class="flex items-center justify-around w-[50%]">
+                                    <span class="text-[22px] font-bold">₼</span>
+                                    <span class="p-2 text-slate-400">˅</span>
+                                </div>
+                                <div class="flex items-center justify-around w-[50%]">
+                                    <img class="w-[20px] h-[25px]" src="img/az.webp" alt="aze-bayraq">
+                                    <span class="p-2 text-slate-400">˅</span>
+                                </div>
+                                <div class="lg:hidden block">
+                                    <div onclick="openHeader(true)"><i
+                                            class="fa-solid fa-bars font-semibold text-2xl"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[40%] xl:block hidden"><button
+                                    class="font-bold px-5 py-2 rounded-lg text-[#FFF] bg-gradient-to-r from-violet-500 to-fuchsia-500 w-[90%]">Qiymət
+                                    Təklifi Al</button></div>
+                            <div class="w-[25%] xl:block hidden"><button
+                                    class="font-bold py-2 text-[#A271F2] rounded-lg border border-[#A271F2] w-[100%]">Daxil
+                                    olun</button></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="md:w-4/5 w-full mx-auto mt-20 bg-[#f5f5f5]">
+        <div class="bg-[#F8F8FA] mt-2  px-4 pt-6 py-2 pb-12  flex flex-col gap-2 md:flex-row md:gap-6">
+            <div class=" md:w-2/3 w-full p-4 bg-white">
+                <h1 class="mt-[16px] mb-12 text-4xl font-bold">Qiymət Təklifi Al</h1>
+                <h3 class="text-lg font-medium">Statik səhifələr</h3>
+                <div class="mt-2 bg-[#F8F8FA] rounded-md overflow-hidden">
+                    <div class="mt-4 py-2 px-4">
+                        <p class="mb-4">Neçə statik səhifə olacaq?</p>
+                        <div class="w-[100%] flex justify-between items-center">
+                            <span
+                                class=" inline-block text-center text-white rounded-md text-sm bg-[#A271F2] w-6 h-6">1</span>
+                            <input oninput="statik(1)" id="statikSehife"
+                                class="accent-[#a271f2] w-[80%] appearance-none cursor-pointer rounded-lg bg-gray-200 h-2"
+                                step="1" min="1" max="20" value="1" type="range">
+                            <span
+                                class=" inline-block text-center text-white rounded-md text-sm bg-[#A271F2] w-6 h-6">20</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 py-2 px-4">
+                        <p>Dizayn mürəkkəblik:</p>
+                        <div class="w-[100%] flex justify-between items-center flex-col h-14">
+                            <div class="flex justify-between  w-[100%] mt-4">
+                                <span class="text-xs">Sadə</span>
+                                <span class="text-xs">Orta</span>
+                                <span class="text-xs">Xüsusi</span>
+                            </div>
+                            <input id="dizayn" oninput="statik(2)"
+                                class="accent-[#a271f2]  w-[100%] appearance-none cursor-pointer rounded-lg bg-gray-200 h-2"
+                                step="1" min="1" max="3" value="1" type="range">
+                        </div>
+                    </div>
+                    <div class="flex justify-between w-[100%] p-4 mt-4 bg-[#4A84BF26]">
+                        <p>Xərc:</p>
+                        <div>
+                            <span id="sehife" class="text-2xl text-[#A271F2] font-semibold"></span>
+                            <span id="sehife" class="text-2xl text-[#A271F2] font-semibold">səhifə</span>
+                            <span class="text-2xl text-[#A271F2] font-semibold">/</span>
+                            <span class="text-2xl text-[#A271F2] font-semibold">₼ </span>
+                            <span id="sehife-mon" class="text-2xl text-[#A271F2] font-semibold"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-9">
+                    <h2 class="text-lg font-medium mt-3">Veb sayt əlavələri</h2>
+                    <div
+                        class="mt-3 bg-[#F8F8FA] rounded-t-lg overflow-hidden py-2 px-4 flex justify-between flex-col lg:flex-row gap-5 ">
+                        <div class="lg:w-[50%] flex flex-col gap-5">
+                            <div class="w-full flex justify-between mt-3">
+                                <div class="font-medium text-sm text-gray-900"><span>Bloq</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(1)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative  duration-500  text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Üzv girişi / Profillər</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(2)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative  duration-500 text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Responsive</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(3)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative duration-500  text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Forum</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(4)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative duration-500  text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Mesajlaşma</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(5)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative duration-500  text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Canlı söhbət</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(6)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative duration-500  text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Qalareya</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(7)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative  duration-500 text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-[50%] flex flex-col gap-5">
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Əlaqə forması</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(8)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative duration-500  text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Saytda axtarış</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(9)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative duration-500  text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Xəritə Məlumatı /
+                                        Geolocation</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(10)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative duration-500  text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Rezervasyon</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(11)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative  duration-500 text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Sosial Media İnteqrasiyası</span>
+                                </div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(12)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative  duration-500 text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Analitika / İzləmə</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(13)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative  duration-500 text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Admin Panel</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(14)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative  duration-500 text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between w-[100%] p-4 rounded-b-lg bg-[#4A84BF26]">
+                        <p>Xərc:</p>
+                        <div>
+                            <span id="elaveler" class="text-2xl text-[#A271F2] font-semibold"></span>
+                            <span class="text-2xl text-[#A271F2] font-semibold">₼</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <h2 class="text-lg font-medium mt-3">Axtarış motorunun optimallaşdırılması</h2>
+                    <div class="mt-3 bg-[#F8F8FA] rounded-t-lg overflow-hidden py-2 px-4">
+                        <div class="flex flex-col md:flex-row md:justify-between gap-y-4">
+                            <ul class=" flex flex-col gap-x-6 gap-y-4 justify-start md:w-[50%]">
+                                <li class="cursor-pointer flex">
+                                    <div>
+                                        <label for="Basliqlar" data-ripple-dark="true"
+                                            class="relative flex items-center mr-2 rounded-full cursor-pointer">
+                                            <input onclick="radio(21)" id="basliqlar" type="checkbox"
+                                                class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-gray-400 transition-all duration-500 before:absolute before:top-2/4 before:left-2/4 before:block before:h-8 before:w-8 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#A271F2] checked:bg-[#A271F2] checked:before:bg-[#A271F2] hover:before:opacity-40"
+                                                name="Başlıqlar &  Meta">
+                                            <div
+                                                class="absolute text-[#fff] transition-opacity opacity-0 pointer-events-none top-2/4 left-[10px] -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5"
+                                                    viewBox="0 0 20 20" fill="currentColor" stroke="currentColor"
+                                                    stroke-width="1">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <span>Başlıqlar & Meta</span>
+                                </li>
+                                <li class="cursor-pointer flex">
+                                    <div>
+                                        <label for="qabaqcil" data-ripple-dark="true"
+                                            class="relative flex items-center mr-2 rounded-full cursor-pointer">
+                                            <input onclick="radio(22)" id="Sitemap" type="checkbox"
+                                                class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-gray-400 transition-all duration-500 before:absolute before:top-2/4 before:left-2/4 before:block before:h-8 before:w-8 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#A271F2] checked:bg-[#A271F2] checked:before:bg-[#A271F2] hover:before:opacity-40"
+                                                name="Başlıqlar &  Meta">
+                                            <div
+                                                class="absolute text-[#fff] transition-opacity opacity-0 pointer-events-none top-2/4 left-[10px] -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5"
+                                                    viewBox="0 0 20 20" fill="currentColor" stroke="currentColor"
+                                                    stroke-width="1">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <span>+20 Qabaqcıl Texnika</span>
+                                </li>
+                                <li class="cursor-pointer flex">
+                                    <div>
+                                        <label for="Sitemap" data-ripple-dark="true"
+                                            class="relative flex items-center mr-2 rounded-full cursor-pointer">
+                                            <input onclick="radio(23)" id="Sitemap" type="checkbox"
+                                                class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-gray-400 transition-all duration-500 before:absolute before:top-2/4 before:left-2/4 before:block before:h-8 before:w-8 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#A271F2] checked:bg-[#A271F2] checked:before:bg-[#A271F2] hover:before:opacity-40"
+                                                name="Başlıqlar &  Meta">
+                                            <div
+                                                class="absolute text-[#fff] transition-opacity opacity-0 pointer-events-none top-2/4 left-[10px] -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5"
+                                                    viewBox="0 0 20 20" fill="currentColor" stroke="currentColor"
+                                                    stroke-width="1">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <span>Sitemap</span>
+                                </li>
+                            </ul>
+                            <ul class=" flex flex-col gap-x-6 gap-y-4 justify-start md:w-[50%]">
+                                <li class="cursor-pointer flex">
+                                    <div>
+                                        <label for="acarSoz" data-ripple-dark="true"
+                                            class="relative flex items-center mr-2 rounded-full cursor-pointer">
+                                            <input onclick="radio(24)" id="Sitemap" type="checkbox"
+                                                class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-gray-400 transition-all duration-500 before:absolute before:top-2/4 before:left-2/4 before:block before:h-8 before:w-8 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#A271F2] checked:bg-[#A271F2] checked:before:bg-[#A271F2] hover:before:opacity-40"
+                                                name="Başlıqlar &  Meta">
+                                            <div
+                                                class="absolute text-[#fff] transition-opacity opacity-0 pointer-events-none top-2/4 left-[10px] -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5"
+                                                    viewBox="0 0 20 20" fill="currentColor" stroke="currentColor"
+                                                    stroke-width="1">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <span>Açar Söz</span>
+                                </li>
+                                <li class="cursor-pointer flex">
+                                    <div>
+                                        <label for="basliqTeqleri" data-ripple-dark="true"
+                                            class="relative flex items-center mr-2 rounded-full cursor-pointer">
+                                            <input onclick="radio(25)" id="Sitemap" type="checkbox"
+                                                class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-gray-400 transition-all duration-500 before:absolute before:top-2/4 before:left-2/4 before:block before:h-8 before:w-8 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#A271F2] checked:bg-[#A271F2] checked:before:bg-[#A271F2] hover:before:opacity-40"
+                                                name="Başlıqlar &  Meta">
+                                            <div
+                                                class="absolute text-[#fff] transition-opacity opacity-0 pointer-events-none top-2/4 left-[10px] -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5"
+                                                    viewBox="0 0 20 20" fill="currentColor" stroke="currentColor"
+                                                    stroke-width="1">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <span>Başlıq Teqləri</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex justify-between w-[100%] p-4 rounded-b-lg bg-[#4A84BF26]">
+                        <p>Xərc:</p>
+                        <div>
+                            <span id="axtaris" class="text-2xl text-[#A271F2] font-semibold"></span>
+                            <span class="text-2xl text-[#A271F2] font-semibold">₼ </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <h2 class="text-lg font-medium mt-3">Elektron ticarət əlavələri</h2>
+                    <div
+                        class="mt-3 bg-[#F8F8FA] rounded-t-lg overflow-hidden py-2 px-4 flex flex-col lg:flex-row gap-5">
+                        <div class="flex flex-col gap-5 lg:w-[50%]">
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Ödəniş</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(15)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative  duration-500 text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Səbət</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(16)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative  duration-500 text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Məhsullar</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(17)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative  duration-500 text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-5 lg:w-[50%]">
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Bəyəndiklərim</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(18)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative  duration-500 text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Filtr</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(19)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative  duration-500 text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-between">
+                                <div class="font-medium text-sm text-gray-900"><span>Məhsul Haqqında</span></div>
+                                <div class="w-11 h-6 ">
+                                    <div onclick="radio(20)" class="parent  rounded-3xl bg-gray-200 duration-500"><i
+                                            class="fa-solid fa-circle text-white relative  duration-500 text-xl px-1 py-1 "></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between w-[100%] p-4 rounded-b-lg bg-[#4A84BF26]">
+                        <p>Xərc:</p>
+                        <div>
+                            <span id="ticaret" class="text-2xl text-[#A271F2] font-semibold"></span>
+                            <span class="text-2xl text-[#A271F2] font-semibold">₼</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <h2 class="text-lg font-medium mt-3">Dizayn mürəkkəblik:</h2>
+                    <div class="mt-3 bg-[#F8F8FA] rounded-t-lg  py-2 px-4">
+                        <div class="w-[100%] flex justify-between items-center flex-col h-14">
+                            <div class="flex justify-between  w-[100%] mt-4">
+                                <span class="text-xs">Ehtiyac yoxdur</span>
+                                <span class="text-xs">Sadə</span>
+                                <span class="text-xs">Xüsusi</span>
+                            </div>
+                            <input oninput="murekkebDizayn()" id="murekkeb"
+                                class="accent-[#a271f2]  w-[100%] appearance-none cursor-pointer rounded-lg bg-gray-200 h-2"
+                                step="1" min="0" max="2" value="0" type="range">
+                        </div>
+                    </div>
+                    <div class="flex justify-between w-[100%] p-4 mt-4 bg-[#4A84BF26]">
+                        <p>Xərc:</p>
+                        <div>
+                            <span id="murekkebSum" class="text-2xl text-[#A271F2] font-semibold"></span>
+                            <span class="text-2xl text-[#A271F2] font-semibold">₼</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3  w-full  ">
+                <div class="md:sticky z-10 top-0">
+                    <div class="p-8  bg-white flex flex-col gap-8">
+                        <div>
+                            <p class="text-[#1C2434]">Təklifiniz</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p class="text-[#8B8B9A]">Statik səhifələr :</p>
+                            <div>
+                                <span id="statik-sum" class="text-lg font-bold text-[#A271F2]"></span>
+                                <span class="text-lg font-bold text-[#A271F2]">₼</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <p class="text-[#8B8B9A]">Əlavələr :</p>
+                            <div>
+                                <span id="elaveler-sum" class="text-lg font-bold text-[#A271F2]"></span>
+                                <span class="text-lg font-bold text-[#A271F2]">₼</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <p class="text-[#8B8B9A]">SEO :</p>
+                            <div>
+                                <span id="seo-sum" class="text-lg font-bold text-[#A271F2]"></span>
+                                <span class="text-lg font-bold text-[#A271F2]">₼</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <p class="text-[#8B8B9A]">E-ticarət :</p>
+                            <div>
+                                <span id="E-sum" class="text-lg font-bold text-[#A271F2]"></span>
+                                <span class="text-lg font-bold text-[#A271F2]">₼</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <p class="text-[#8B8B9A]">Logo dizaynı :</p>
+                            <div>
+                                <span id="logo-sum" class="text-lg font-bold text-[#A271F2]"></span>
+                                <span class="text-lg font-bold text-[#A271F2]">₼</span>
+                            </div>
+                        </div>
+                        <div class="h-[1px] w-full bg-gray-200"></div>
+                        <div class="flex justify-between">
+                            <p class="text-[#8B8B9A] font-bold">Qeyd :</p>
+                            <span class="text-base  text-[#A271F2]"> <span class="text-[#8B8B9A]">Minimum sayt
+                                    qiyməti</span> ₼ 450</span>
+                        </div>
+                    </div>
+                    <div class="bgg h-24 w-full">
+                        <h3 class="p-8 flex justify-between text-white text-xl font-bold md:text-2xl"> Ümumi təxmini
+                            dəyəri:
+                            <div>
+                                <span id="umumi-sum"></span>
+                                <span> ₼</span>
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="w-full">
+                        <button class="bg-[#2BC48A] w-full mt-5 p-4 text-white rounded-md font-bold">Saytınızı İndi
+                            Sifariş
+                            Edin</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class=" mt-12 bggfooter">
+        <div class=" max-w-[1296px]  px-4 py-6 flex flex-col lg:flex-row gap-[30px] justify-around  lg:items-center lg:mx-16 lg:px-4 lg:py-20">
+            <div class="flex flex-col gap-8">
+                <a href="index.htm"><img class="w-[200px]" src="img/saytaz.svg" alt=""></a>
+                <p class="text-base md:text-sm  max-w-[456px] mb-10 lg:text-sm">2004-cü ildən bəri sübut edilmiş təcrübə ilə WebsiteCA hərtərəfli veb xidmətlərinin etibarlı
+                    təminatçısıdır. Peşəkar komandamız qlobal bazarda çoxsaylı nailiyyətlər əldə edərək, bizi bütün veb
+                    ehtiyaclarınız üçün etibarlı tərəfdaşa çevirdi. Veb sayt və proqramların hazırlanmasından tutmuş
+                    domen, hostinq və server satışına qədər biz geniş çeşiddə xidmətlər təklif edirik. Dizayn, SEO, SMM
+                    və digər sahələrdə təcrübəmizlə onlayn uğurunuzu təmin edirik. Müstəsna veb həllər üçün WebsiteCA-a
+                    etibar edin.</p>
+                    <div>
+                        <p class="font-bold mb-4 text-[#4A2182]">Bizi izləyin</p>
+                        <div  class="flex gap-4">
+                        <i class="fa-brands fa-facebook text-[#A271F2] text-4xl"></i>
+                        <i class="fa-brands fa-instagram text-[#A271F2] text-4xl"></i>
+                        <i class="fa-brands fa-x-twitter text-[#A271F2] text-4xl"></i>
+                        <i class="fa-brands fa-youtube text-[#A271F2] text-4xl"></i>
+                        </div>
+                    </div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-[60px] ">
+                <ul>
+                    <li class="font-bold text-[#4A2182] text-2xl">Hosting & Domen</li>
+                    <li class="mt-4 text-[#4A2182] font-bold">Domen</li>
+                    <li class="mt-4 text-[#4A2182] font-bold">Veb Hosting</li>
+                    <li class="mt-4 text-[#4A2182] font-bold">VPS Hosting</li>
+                    <li class="mt-4 text-[#4A2182] font-bold">Server</li>
+                </ul>
+                <ul>
+                    <li class="font-bold text-[#4A2182] text-2xl">Şirkət</li>
+                    <li class="mt-4 text-[#4A2182] font-bold">Haqqımızada</li>
+                    <li class="mt-4 text-[#4A2182] font-bold">Əlaqə</li>
+                    <li class="mt-4 text-[#4A2182] font-bold">Bloq</li>
+                    <li class="mt-4 text-[#4A2182] font-bold">Portfolio</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
