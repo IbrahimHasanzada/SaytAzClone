@@ -13,6 +13,9 @@
 </head>
 
 <body>
+    <div class="bgg w-16 h-16 fixed bottom-5 right-5 z-10 rounded-full flex justify-center items-center">
+        <i class="fa-solid fa-comment  text-2xl text-white"></i>
+    </div>
     <header>
         <nav>
             <!--  M O B I L E    H E A D E R  N A V B A R  -->
@@ -51,12 +54,12 @@
                     <div class="w-[114px] h-[35px]"><img class="w-[100%]" src="img/saytaz.svg" alt="sayt.az Logo"></div>
                     <div class="w-[50%] lg:block hidden">
                         <ul class="flex justify-around 2xl:gap-x-[3.75rem] gap-x-1 ">
-                            <li class="text-base text-[#300B60] font-semibold">Sayt Yarat</li>
-                            <li class="text-base text-[#300B60] font-semibold">Veb sayt ˅</li>
-                            <li class="text-base text-[#300B60] font-semibold">Domen</li>
-                            <li class="text-base text-[#300B60] font-semibold">Hosting ˅</li>
-                            <li class="text-base text-[#300B60] font-semibold">Şirkət ˅</li>
-                            <li class="text-base text-[#300B60] font-semibold">Xidmətlər ˅</li>
+                            <li class="text-base text-[#300B60] font-semibold hover:text-[#A271F2] cursor-pointer">Sayt Yarat</li>
+                            <li class="text-base text-[#300B60] font-semibold hover:text-[#A271F2] cursor-pointer">Veb sayt ˅</li>
+                            <li class="text-base text-[#300B60] font-semibold hover:text-[#A271F2] cursor-pointer">Domen</li>
+                            <li class="text-base text-[#300B60] font-semibold hover:text-[#A271F2] cursor-pointer">Hosting ˅</li>
+                            <li class="text-base text-[#300B60] font-semibold hover:text-[#A271F2] cursor-pointer">Şirkət ˅</li>
+                            <li class="text-base text-[#300B60] font-semibold hover:text-[#A271F2] cursor-pointer">Xidmətlər ˅</li>
                         </ul>
                     </div>
                     <div class="xl:w-[30%]">
@@ -101,17 +104,17 @@
                         <p class="mb-4">Neçə statik səhifə olacaq?</p>
                         <div class="w-[100%] flex justify-between items-center">
                             <span
-                                class=" inline-block text-center text-white rounded-md text-sm bg-[#A271F2] w-6 h-6">1</span>
+                                class=" flex justify-center items-center text-center text-white rounded-md text-sm lg:text-lg bg-[#A271F2] w-6 h-6 lg:w-7 lg:h-7">1</span>
                             <input oninput="statik(1)" id="statikSehife"
                                 class="accent-[#a271f2] w-[80%] appearance-none cursor-pointer rounded-lg bg-gray-200 h-2"
                                 step="1" min="1" max="20" value="1" type="range">
                             <span
-                                class=" inline-block text-center text-white rounded-md text-sm bg-[#A271F2] w-6 h-6">20</span>
+                                class=" flex justify-center items-center text-center text-center text-white rounded-md text-sm lg:text-lg bg-[#A271F2] w-6 h-6 lg:w-7 lg:h-7">20</span>
                         </div>
                     </div>
-                    <div class="mt-4 py-2 px-4">
+                    <div class="mt-4 py-2 px-4 lg:flex lg:items-end lg:justify-between">
                         <p>Dizayn mürəkkəblik:</p>
-                        <div class="w-[100%] flex justify-between items-center flex-col h-14">
+                        <div class="w-full lg:w-[70%] flex justify-between items-center flex-col h-14">
                             <div class="flex justify-between  w-[100%] mt-4">
                                 <span class="text-xs">Sadə</span>
                                 <span class="text-xs">Orta</span>
@@ -524,7 +527,7 @@
                         </div>
                     </div>
                     <div class="bgg h-24 w-full">
-                        <h3 class="p-8 flex justify-between text-white text-xl font-bold md:text-2xl"> Ümumi təxmini
+                        <h3 class="p-8 flex justify-between text-white text-xl font-bold  md:text-base lg:text-2xl"> Ümumi təxmini
                             dəyəri:
                             <div>
                                 <span id="umumi-sum"></span>
